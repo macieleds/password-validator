@@ -6,7 +6,8 @@ import java.util.regex.Pattern;
 public class PasswordValidation {
 
     private static final String PASSWORD_PATTERN =
-            "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-+])^(?:([A-Za-z])(?!.*\\1))[^-\\s]*$.{9,}$";
+            //TODO - Regex de repetição
+            "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+-])(?=\\S+$).{9,}$";
 
     private static final Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
 

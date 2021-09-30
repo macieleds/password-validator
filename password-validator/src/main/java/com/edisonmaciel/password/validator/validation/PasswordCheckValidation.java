@@ -9,17 +9,17 @@ import javax.validation.ConstraintValidatorContext;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PasswordCheckValidation implements ConstraintValidator<ValidPassword, String> {
+public class PasswordCheckValidation implements ConstraintValidator<ValidPassword, Password> {
 
     @Override
     public void initialize(ValidPassword ann) {
     }
 
     @Override
-    public boolean isValid(String password, ConstraintValidatorContext context) {
+    public boolean isValid(Password password, ConstraintValidatorContext context) {
         List<FieldMessage> list = new ArrayList<>();
 
-        if(!PasswordValidation.isValidPassword(password)){
+        if(!PasswordValidation.isValidPassword(password.getPassword())){
             list.add(new FieldMessage("password", "Senha inválida"));
         }
 
