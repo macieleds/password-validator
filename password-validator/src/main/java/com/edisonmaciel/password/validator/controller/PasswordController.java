@@ -14,7 +14,7 @@ public class PasswordController {
 
 
     @PostMapping
-    public String insertPassword(@Valid @RequestBody Password password){
+    public String insertPassword(@Valid @RequestBody final Password password){
         return "VALID PASSWORD";
     }
 

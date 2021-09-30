@@ -20,7 +20,7 @@ public class PasswordCheckValidation implements ConstraintValidator<ValidPasswor
         List<FieldMessage> list = new ArrayList<>();
 
         if(!PasswordValidation.isValidPassword(password.getPassword())){
-            list.add(new FieldMessage("password", "Senha inválida"));
+            list.add(new FieldMessage("password", "Password does not match the standards"));
         }
 
         for (FieldMessage e : list) {
