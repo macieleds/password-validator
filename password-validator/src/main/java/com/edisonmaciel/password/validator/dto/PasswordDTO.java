@@ -1,18 +1,17 @@
-package com.edisonmaciel.password.validator.domain;
+package com.edisonmaciel.password.validator.dto;
 
 import com.edisonmaciel.password.validator.validation.ValidPassword;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Password {
+@ValidPassword
+public class PasswordDTO {
 
     @NotNull
     private String password;
