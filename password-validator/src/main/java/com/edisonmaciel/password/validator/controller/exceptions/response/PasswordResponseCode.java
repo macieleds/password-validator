@@ -13,7 +13,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public enum PasswordResponseCode {
 
-    DADOS_INCONSISTENTES("ERROR", "INVALID PASSWORD");
+    SUCCESS("SUCCESS", "VALID PASSWORD"),
+    INVALID_PAYLOAD("INVALID_PAYLOAD", "PASSWORD DOEST NOT MATCH THE STANDARDS");
 
     private static final Map<String, PasswordResponseCode> MAP = Arrays.stream(PasswordResponseCode.values())
             .collect(Collectors.toMap(PasswordResponseCode::getCode, Function.identity()));

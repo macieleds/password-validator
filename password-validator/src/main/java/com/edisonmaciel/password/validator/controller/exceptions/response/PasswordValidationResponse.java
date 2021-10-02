@@ -12,8 +12,8 @@ public class PasswordValidationResponse {
 
     private String dateHour;
 
-    public PasswordValidationResponse(final PasswordResponseCode resultado) {
-        this.result = resultado;
+    public PasswordValidationResponse(final PasswordResponseCode result) {
+        this.result = result;
         this.dateHour = createDate();
     }
 
