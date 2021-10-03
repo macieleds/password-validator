@@ -22,7 +22,7 @@ class PasswordValidatorApplicationTests {
 	@ParameterizedTest(name = "#{index} - Run test with password = {0}")
 	@MethodSource("invalidPasswordProvider")
 	void shouldValidateIncorrectPasswordPattern(String password) {
-		assertFalse(PasswordValidation.isValidPassword(password));
+		assertTrue(!PasswordValidation.isValidPassword(password) || PasswordValidation.hasRepeatedCharacters(password));
 	}
 
 	static Stream<String> validPasswordProvider() {
@@ -42,10 +42,4 @@ class PasswordValidatorApplicationTests {
 				"AbTp9 fok"
 		);
 	}
-
-
-
-
-
-
 }

@@ -8,6 +8,7 @@ import com.edisonmaciel.password.validator.validation.utils.PasswordValidation;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PasswordCheckValidation implements ConstraintValidator<ValidPassword, PasswordDTO> {
@@ -20,7 +21,7 @@ public class PasswordCheckValidation implements ConstraintValidator<ValidPasswor
     public boolean isValid(PasswordDTO password, ConstraintValidatorContext context) {
         List<FieldMessage> list = new ArrayList<>();
 
-        if(!PasswordValidation.isValidPassword(password.getPassword())){
+        if(!PasswordValidation.isValidPassword(password.getPassword()) || PasswordValidation.hasRepeatedCharacters(password.getPassword())){
             list.add(new FieldMessage("password", "Password does not match the standards"));
         }
 

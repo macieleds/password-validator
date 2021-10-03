@@ -1,12 +1,18 @@
 package com.edisonmaciel.password.validator.validation.utils;
 
+import com.edisonmaciel.password.validator.domain.Password;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class PasswordValidation {
 
     private static final String PASSWORD_PATTERN =
-            //TODO - Regex de repetição
+
             "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+-])(?=\\S+$).{9,}$";
 
     private static final Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
@@ -14,5 +20,16 @@ public class PasswordValidation {
     public static boolean isValidPassword(final String password) {
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
+    }
+
+    public static boolean hasRepeatedCharacters(CharSequence password) {
+        for (int i = 0; i < password.length(); i++) {
+            for (int j = i + 1; j < password.length(); j++) {
+                if (password.charAt(i) == password.charAt(j)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
