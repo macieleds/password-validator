@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/password")
+@RequestMapping
 public class PasswordController {
 
 
-    @PostMapping
+    @PostMapping("/password")
     public ResponseEntity<PasswordValidationResponse> insertPassword(
             @Valid
             @RequestBody
