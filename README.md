@@ -1,4 +1,4 @@
-<p align="center"><img width="600" height="250" src="https://i.ibb.co/jGsyd3p/1-0-Hyu03i97p-VH5-TCwlsc-Ag.png"></p>
+<p align="center"><img width="500" height="210" src="https://i.ibb.co/jGsyd3p/1-0-Hyu03i97p-VH5-TCwlsc-Ag.png"></p>
 
 
 
@@ -87,4 +87,4 @@ onde será aplicada a lógica de validação contida na classe PasswordValidatio
 
 <h3 class="code-line" data-line-start=86 data-line-end=87 ><a id="Contato_86"></a>Contato</h3>
 <p class="has-line-data" data-line-start="88" data-line-end="90">E-mail: <a href="mailto:maciel.eds@gmail.com">maciel.eds@gmail.com</a><br>
-Linkedin: <a href="https://www.linkedin.com/in/edison-maciel-6a83a14a/">https://www.linkedin.com/in/edison-maciel//</a></p>
+Linkedin: <a href="https://www.linkedin.com/in/edison-maciel-6a83a14a/">https://www.linkedin.com/in/edison-maciel/</a></p>
