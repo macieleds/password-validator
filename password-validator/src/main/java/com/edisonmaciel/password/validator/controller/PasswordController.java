@@ -19,11 +19,10 @@ public class PasswordController {
 
 
     @PostMapping("/password")
-    public ResponseEntity<PasswordValidationResponse> insertPassword(
+    public ResponseEntity<PasswordValidationResponse> validatePassword(
             @Valid
             @RequestBody
             final PasswordDTO passwordDTO){
         return ResponseEntity.ok(PasswordValidationResponse.of(PasswordResponseCode.SUCCESS));
     }
-
 }
