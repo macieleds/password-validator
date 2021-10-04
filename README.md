@@ -1,4 +1,4 @@
-<p align="center"><img width="600" height="200" src="https://i.ibb.co/jGsyd3p/1-0-Hyu03i97p-VH5-TCwlsc-Ag.png"></p>
+<p align="center"><img width="500" height="210" src="https://i.ibb.co/jGsyd3p/1-0-Hyu03i97p-VH5-TCwlsc-Ag.png"></p>
 
 
 
