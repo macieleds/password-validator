@@ -1,11 +1,5 @@
 package com.edisonmaciel.password.validator.validation.utils;
 
-import com.edisonmaciel.password.validator.domain.Password;
-
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,7 +16,7 @@ public class PasswordValidation {
         return matcher.matches();
     }
 
-    public static boolean hasRepeatedCharacters(CharSequence password) {
+    public static boolean hasRepeatedCharacters(final CharSequence password) {
         for (int i = 0; i < password.length(); i++) {
             for (int j = i + 1; j < password.length(); j++) {
                 if (password.charAt(i) == password.charAt(j)) {

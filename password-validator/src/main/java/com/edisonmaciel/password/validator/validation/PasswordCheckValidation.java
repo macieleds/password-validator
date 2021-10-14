@@ -18,14 +18,14 @@ public class PasswordCheckValidation implements ConstraintValidator<ValidPasswor
     }
 
     @Override
-    public boolean isValid(PasswordDTO password, ConstraintValidatorContext context) {
+    public boolean isValid(final PasswordDTO password, final ConstraintValidatorContext context) {
         List<FieldMessage> list = new ArrayList<>();
 
         if(!PasswordValidation.isValidPassword(password.getPassword()) || PasswordValidation.hasRepeatedCharacters(password.getPassword())){
             list.add(new FieldMessage("password", "Password does not match the standards"));
         }
 
-        for (FieldMessage e : list) {
+        for (final FieldMessage e : list) {
             context.disableDefaultConstraintViolation();
             context.buildConstraintViolationWithTemplate(e.getMessage()).addPropertyNode(e.getFieldName())
                     .addConstraintViolation();

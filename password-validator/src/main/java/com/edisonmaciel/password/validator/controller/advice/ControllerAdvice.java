@@ -21,13 +21,11 @@ public class ControllerAdvice extends ResponseEntityExceptionHandler {
             final WebRequest request) {
         return handleResponse(ex,
                 request,
-                false,
                 PasswordValidationResponse.of(PasswordResponseCode.INVALID_PAYLOAD));
     }
 
     private ResponseEntity<Object> handleResponse(final Exception ex,
                                                   final WebRequest request,
-                                                  final Boolean technicalError,
                                                   final PasswordValidationResponse response) {
         final var result = response.getResult();
         return super.handleExceptionInternal(
