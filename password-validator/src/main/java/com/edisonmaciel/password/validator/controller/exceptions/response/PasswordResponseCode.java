@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public enum PasswordResponseCode {
 
     SUCCESS("SUCCESS", "VALID PASSWORD"),
-    INVALID_PAYLOAD("INVALID_PAYLOAD", "PASSWORD DOEST NOT MATCH THE STANDARDS");
+    INVALID_PAYLOAD("INVALID_PAYLOAD", "PASSWORD DOES NOT MATCH THE STANDARDS");
 
     private static final Map<String, PasswordResponseCode> MAP = Arrays.stream(PasswordResponseCode.values())
             .collect(Collectors.toMap(PasswordResponseCode::getCode, Function.identity()));
