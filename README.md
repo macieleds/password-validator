@@ -52,7 +52,7 @@ IsValid("AbTp9!fok") // true
 
 <p class="has-line-data" data-line-start="37" data-line-end="38"><img src="https://thumbs2.imgbox.com/6b/bb/njsQlogd_t.png" alt="N|Solid"></p>
 
-<h3 class="code-line" data-line-start=29 data-line-end=30 ><a id="1__Criao_de_usurio_29"></a>3 - Execução de testes unitários</h3>
+<h3 class="code-line" data-line-start=29 data-line-end=30 ><a id="1__Criao_de_usurio_29"></a>3 - Execução de testes unitários e integrados</h3>
 <p class="has-line-data" data-line-start="31" data-line-end="32">Para a execução dos testes unitários, vá até o diretório test, na classe PasswordValidatorApplicationTests e execute os testes em Run</p>
 
 <p class="has-line-data" data-line-start="37" data-line-end="38"><img src="https://thumbs2.imgbox.com/e4/33/qQPNCwdd_t.png"></p>
